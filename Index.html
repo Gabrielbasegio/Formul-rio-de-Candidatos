@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <form action="https://formspree.io/f/mlezqqoy" method="POST">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.CSS" media="screen">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de Candidatos</h1>
+        <p id="subtitulo">Informe seus dados abaixo:</p>
+        <br>
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" nome="sobrenome" id="sobrenome">
+                </div>
+            </fieldset>
+
+            <div clas="campo">
+                <label for="e-mail">E-mail</label>
+                <input type="E-mail" nome="E-mail" id="E-mail">
+            </div>
+
+            <div class="campo">
+                <label>Qual vaga você está buscando?</label>
+                <label>
+                <input type="radio" name="devweb" id="Programador"> Programador
+                </label>
+                <label>
+                    <input type="radio" name="devweb" id="Designer Gráfico"> Designer Gráfico
+                </label>
+                <label>
+                    <input type="radio" name="devweb" id="Assistente Administrativo"> Assistente Administrativo
+                </label>
+                <label>
+                    <input type="radio" name="devweb" id="Professor de Informática"> Professor de Informática
+                </label>
+            </div>
+
+            <div clas="campo">
+                <label>Experiência</label>
+                <select id="experiência">
+                <option selected disabled value="">Selecione</option>
+                <option>Iniciante</option>
+                <option>Intermediario(a)</option>
+                <option>Avançado(a)</option>
+            </select>
+            </div>
+
+            <fieldset>
+                <div id="check">
+                    <label>Selecione seu nível de formação:</label>
+                    <input type="checkbox" id="formação1" name="formação1" value="Ensino superior em Andamento">
+                    <label for="formação1">Ensino superior em Andamento</label>
+                    <input type="checkbox" id="formação2" name="formação2" value="Ensino Superior Completo">
+                    <label for="formação2">Ensino Superior Completo</label>
+                    <input type="checkbox" id="formação3" name="formação3" value="Ensino Superior Interrompido">
+                    <label for="formação3">Ensino Superior Interrompido</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="campo">
+                    <br>
+                    <label>Conte um pouco sobre você:</label>
+                    <textarea row="6"  style="width: 26em" id="experiencia" name="experiencia"></textarea>
+                </div>
+            </fieldset>
+            <button class="botao" type="submit">Enviar formulário</button>
+         </form>
+</body>
+</html>
